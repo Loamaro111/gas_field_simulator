@@ -114,8 +114,6 @@ class FieldSimulator:
                 "Gp": Gp
             })
             if t % 30 == 0 or t == N_days - 1:
-                print(
-                    f"День {t:3d}: P_res = {P_res_curr:.2f} атм, q_total = {q_wells_total:.1f} ст.м³/сут, Gp = {Gp:.1f} тыс.м³")
-
-            return pd.DataFrame(results)
+                print(f"День {t:3d}: P_res = {P_res_curr:.2f} атм, q_total = {q_wells_total:.1f} ст.м³/сут, Gp = {Gp:.1f} тыс.м³")
+        return pd.DataFrame(results)
 
